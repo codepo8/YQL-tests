@@ -15,7 +15,7 @@
         var res = y.query("select href from html where url='http://collectionsonline.nmsi.ac.uk/info.php?page=0&v=1&s=trevithick&type=all&t=objects&f=&d=' and xpath='//div[@class="+'"'+"content"+'"'+"]/p[@align="+'"'+"center"+'"'+"]/a'").results;
         for each(var i in res..a){
           var url = 'http://collectionsonline.nmsi.ac.uk/'+(i.@['href']);
-var inner = y.query("select * from html where url = '"+url+"' and xpath='//div[@class="+'"'+"content"+'"'+"]//a/img'").results;
+var inner = "select * from html where url = '"+url+"' and xpath='//div[@class="+'"'+"content"+'"'+"]//a/img'";
 
 
           y.log(inner);
