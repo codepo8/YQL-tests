@@ -20,7 +20,7 @@
 var inner = y.query("select * from html where url = '"+url+"' and xpath='//div//td//img'").results;
           out.img += inner..img;
         }
-        response.object = <foo>{out}</foo>;
+        response.object = {out};
       ]]></execute>
     </select>
   </bindings>
