@@ -16,7 +16,7 @@
         for each(var i in res..a){
           var url = 'http://collectionsonline.nmsi.ac.uk/'+(i.@['href']);
           var url = url.replace('&amp;','&');
-var inner = y.query("select * from html where url = '"+url+"' and xpath='//div[@class="+'"'+"content"+'"'+"]//a/img'").results;
+var inner = y.query("select * from html where url = '"+url+"' and xpath='//div//td//img'").results;
 
 
           y.log(inner);
