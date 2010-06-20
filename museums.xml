@@ -3,7 +3,6 @@
   <meta>
     <sampleQuery>select * from {table} where place1="london" and place="paris"</sampleQuery>
     <author>Christian Heilmann</author>
-    <!-- select * from html where url in () and xpath="//div[@class='content']/p[@align='center']/a"-->
 
     <documentationURL>http://isithackday.com/hacks/geo/distance/</documentationURL>  
     <description>Gives you the distance of two places on earth in miles or kilometers</description>
