@@ -13,7 +13,7 @@
       <execute><![CDATA[
         var out = '';
         var res = y.query("select href from html where url='http://collectionsonline.nmsi.ac.uk/info.php?page=0&v=1&s=trevithick&type=all&t=objects&f=&d=' and xpath='//div[@class="+'"'+"content"+'"'+"]/p[@align="+'"'+"center"+'"'+"]/a'").results;
-        for each(var i in res.results.a){
+        for each(var i in res..a){
         y.log(i);
         }
         response.object = <foo></foo>;
